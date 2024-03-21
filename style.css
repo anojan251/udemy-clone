@@ -13,17 +13,24 @@ body{
 }
 .container__sub{
     
-    padding: 10px;
+    top: 0;
     max-width: 1300px;
     
     
 }
 .navbar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     border-bottom: solid grey 1px;
     justify-content: space-between;
-    padding-bottom: 10px;
+    
+    background-color: white;
+    gap: 10px;
+    z-index: 99;
 
     
 }
@@ -37,14 +44,17 @@ body{
     width: 60%;
     display: flex;
     padding: 10px;
-    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
+
 }
 .navbar__search{
     border: none;
     outline: none;
     width: 100%;
     font-size: large;
+    
 }
 .navbar__s3{
     display: flex;
@@ -53,7 +63,50 @@ body{
     align-items: center;
     
 }
+.navbar__s3menu{
+    position: relative;
+}
+.navbar__s3menu--popup{
+
+    margin-top: 10px;
+    right: 10px;
+    border: solid black 2px;
+    position: absolute;
+    display: none;
+    color:black;
+    background-color:white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    right: 0;
+   
+   
+}
+.navbar__s3menu:hover .navbar__s3menu--popup{
+    
+    display: block;
+}
+.sale-image img{
+    width: 100%;
+
+}
+.sale-image{
+    position: relative;
+}
+.animbox{
+    position: absolute;
+    border: solid 2px;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    
+    
+}
+
 .category{
+    
     display: flex;
     justify-content: space-around;
     color: white;
@@ -71,10 +124,7 @@ body{
     background-color: white;
     border: solid blueviolet 1px;
 }
-.sale-image img{
-    width: 100%;
 
-}
 .recommended__title{
     margin-top: 10px;
 }
