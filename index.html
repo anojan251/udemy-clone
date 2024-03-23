@@ -16,33 +16,41 @@
 </head>
 
 <body>
+
+
+    <div class="navbar">
+        <div class="navbar__s1">
+            <h1 class="navbar__title">Udemy</h1>
+        </div>
+        <!--Search bar-->
+        <div class="navbar__s2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" name="" id="" class="navbar__search"
+                placeholder="Serch for anything. Tech, Business, Art ...">
+        </div>
+        <div class="navbar__s3">
+            <h3>Trending Courses</h3>
+            <div class="navbar__s3menu">
+                <h3 class="navbar__s3menu navbar__s3menu--mylearning">My Learning</h3>
+                <p class="navbar__s3menu navbar__s3menu--popup">You haven't purchased any Courses yet</p>
+            </div>
+
+            
+            <!--fontawesome-->
+            <div class="navbar__s3__fontawesome">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+           
+        </div>
+        <div class="navbar__s4__humburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
     <div class="container">
         <div class="container__sub">
-            <div class="navbar">
-                <div class="navbar__s1">
-                    <h1 class="navbar__title">Udemy</h1>
-                </div>
-                <!--Search bar-->
-                <div class="navbar__s2">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" name="" id="" class="navbar__search"
-                        placeholder="Serch for anything. Tech, Business, Art ...">
-                </div>
-                <div class="navbar__s3">
-                        <h3>Trending Courses</h3>
-                    <div class="navbar__s3menu">
-                        <h3 class="navbar__s3menu navbar__s3menu--mylearning">My Learning</h3>
-                        <p class="navbar__s3menu navbar__s3menu--popup">You haven't purchased any Courses yet</p>
-                    </div>
-                    
-                    
-                    <!--fontawesome-->
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-bell"></i>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-
-            </div>
             <!--Category section-->
             <div class="category">
                 <h3 class="category__menu">Development</h3>
@@ -55,10 +63,11 @@
             <!--Image section-->
             <div class="sale-image">
                 <img src="./img/udemycover.png" alt="">
+                <!-- Animation Box -->
                 <div class="animbox">
-                <h1>Udemy flash sale! 24 hours to save.</h1>
-                <p>Purchase for just Rs.499, any chosen course, then get a lifetime access on our platform</p>
-            </div>
+                    <h1>Udemy flash sale! 24 hours to save.</h1>
+                    <p>Purchase for just Rs.499, any chosen course, then get a lifetime access on our platform</p>
+                </div>
             </div>
             <!--Recommended-->
             <div class="recommended">
@@ -68,34 +77,42 @@
                 <div class="recommended__subject-cards">
                     <div class="recommended__subject-cards__card">
                         <img src="./img/python.avif" alt="">
-                        <h3>2023Python Data Visualisazion master class</h3>
-                        <p>Col Steele</p>
-                        <p>4.5 ⭐⭐⭐</p>
-                        <p>499 <del>1999</del></p>
+                        <div class="recommended__subject-cards__card__description">
+                            <h3>2023Python Data Visualisazion master class</h3>
+                            <p>Col Steele</p>
+                            <p>4.5 ⭐⭐⭐</p>
+                            <p>499 <del>1999</del></p>
+                        </div>
                     </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/bootcamp.png" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Web Development Bootcamo 2023 | Advanced</h3>
                         <p>Col Steele</p>
                         <p>5.0 ⭐⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/ux.avif" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Master UI/UX Designing with Figma</h3>
                         <p>Col Steele</p>
                         <p>4.8 ⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/java.webp" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Basic to Advanced Java Core Training</h3>
                         <p>Col Steele</p>
                         <p>4.7 ⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
+                    </div>
                     </div>
 
                 </div>
@@ -118,97 +135,117 @@
             <!--Most Poppular-->
 
             <div class="recommended">
-                <h1 class="recommended__title">Recommended for you</h1>
+                <h1 class="recommended__title">Most Popular</h1>
                 <p>Pick the best fit</p>
 
                 <div class="recommended__subject-cards">
                     <div class="recommended__subject-cards__card">
                         <img src="./img/python.avif" alt="">
-                        <h3>2023Python Data Visualisazion master class</h3>
-                        <p>Col Steele</p>
-                        <p>4.5 ⭐⭐⭐</p>
-                        <p>499 <del>1999</del></p>
+                        <div class="recommended__subject-cards__card__description">
+                            <h3>2023Python Data Visualisazion master class</h3>
+                            <p>Col Steele</p>
+                            <p>4.5 ⭐⭐⭐</p>
+                            <p>499 <del>1999</del></p>
+                        </div>
                     </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/bootcamp.png" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Web Development Bootcamo 2023 | Advanced</h3>
                         <p>Col Steele</p>
                         <p>5.0 ⭐⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/ux.avif" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Master UI/UX Designing with Figma</h3>
                         <p>Col Steele</p>
                         <p>4.8 ⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/java.webp" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Basic to Advanced Java Core Training</h3>
                         <p>Col Steele</p>
                         <p>4.7 ⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
+
                     <div class="recommended__subject-cards__card">
                         <img src="./img/python.avif" alt="">
-                        <h3>2023Python Data Visualisazion master class</h3>
-                        <p>Col Steele</p>
-                        <p>4.5 ⭐⭐⭐</p>
-                        <p>499 <del>1999</del></p>
+                        <div class="recommended__subject-cards__card__description">
+                            <h3>2023Python Data Visualisazion master class</h3>
+                            <p>Col Steele</p>
+                            <p>4.5 ⭐⭐⭐</p>
+                            <p>499 <del>1999</del></p>
+                        </div>
                     </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/bootcamp.png" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Web Development Bootcamo 2023 | Advanced</h3>
                         <p>Col Steele</p>
                         <p>5.0 ⭐⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/ux.avif" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Master UI/UX Designing with Figma</h3>
                         <p>Col Steele</p>
                         <p>4.8 ⭐⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                     <div class="recommended__subject-cards__card">
                         <img src="./img/java.webp" alt="">
+                        <div class="recommended__subject-cards__card__description">
                         <h3>Basic to Advanced Java Core Training</h3>
                         <p>Col Steele</p>
                         <p>4.7 ⭐⭐⭐</p>
                         <p>499 <del>1999</del></p>
                     </div>
+                    </div>
 
                 </div>
             </div>
-            <div class="footer">
-                <div class="footer__s1__1">
-                    <p>Udemy Business</p>
-                    <p>Teach on udemy</p>
-                    <p>Get the app</p>
-                    <p>About us</p>
-                    <p>Contact us</p>
-                </div>
-                <div class="footer__s1__1">
-                    <p>Careers</p>
-                    <p>Blog</p>
-                    <p>Help and Support</p>
-                    <p>Affiliate</p>
-                    <p>Investors</p>
-                </div>
-            </div>
-            <div class="footer__s2">
-                <h1 class="footer__s2__title">Udemy</h1>
-                <p class="footer__s2__para">&copy2024 Udemy, Inc</p>
-            </div>
+           
         </div>
     </div>
+    <div class="footer">
+        <div class="footer__s1__1">
+            <p>Udemy Business</p>
+            <p>Teach on udemy</p>
+            <p>Get the app</p>
+            <p>About us</p>
+            <p>Contact us</p>
+        </div>
+        <div class="footer__s1__1">
+            <p>Careers</p>
+            <p>Blog</p>
+            <p>Help and Support</p>
+            <p>Affiliate</p>
+            <p>Investors</p>
+        </div>
+    </div>
+    <div class="footer__s2">
+        <h1 class="footer__s2__title">Udemy</h1>
+        <p class="footer__s2__para">&copy2024 Udemy, Inc</p>
+    </div>
+
+
 </body>
 
 </html>
