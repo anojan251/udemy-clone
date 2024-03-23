@@ -65,7 +65,10 @@ body{
 }
 .navbar__s3menu{
     position: relative;
+   
+   
 }
+
 .navbar__s3menu--popup{
 
     margin-top: 10px;
@@ -79,9 +82,11 @@ body{
     padding: 10px;
     text-align: center;
     right: 0;
+    
    
    
 }
+
 .navbar__s3menu:hover .navbar__s3menu--popup{
     
     display: block;
@@ -101,10 +106,24 @@ body{
     width: 400px;
     background-color: white;
     padding: 10px;
+    animation-name: flashsale;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
     
     
 }
+@keyframes flashsale {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
 
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 .category{
     
     display: flex;
@@ -120,9 +139,10 @@ body{
     border: solid 1px;
 }
 .category__menu:hover{
-    color: blueviolet;
-    background-color: white;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
     border: solid blueviolet 1px;
+    transition: 1s;
 }
 
 .recommended__title{
